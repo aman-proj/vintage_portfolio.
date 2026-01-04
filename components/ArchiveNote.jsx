@@ -29,13 +29,13 @@ export function ArchiveNote() {
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-between pointer-events-none select-none overflow-hidden py-20">
           <motion.h2 
             style={{ x: x1 }}
-            className="font-serif text-[15vw] leading-none text-white/[0.02] uppercase whitespace-nowrap -ml-40"
+            className="font-serif text-[15vw] leading-none text-white/[0.06] uppercase whitespace-nowrap -ml-40"
           >
-            Technical Precision — Engineering — Systems
+             Engineering — Systems
           </motion.h2>
           <motion.h2 
             style={{ x: x2 }}
-            className="font-serif text-[15vw] leading-none text-white/[0.02] uppercase whitespace-nowrap ml-40"
+            className="font-serif text-[15vw] leading-none text-white/[0.07] uppercase whitespace-nowrap ml-40"
           >
             Architecture — Innovation — Distributed
           </motion.h2>

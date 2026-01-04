@@ -19,7 +19,7 @@ export function Hero() {
         <img 
           src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" 
           alt="Vintage Technical Background"
-          className="w-full h-full object-cover grayscale brightness-[0.2] contrast-125"
+          className="w-full h-full object-cover grayscale brightness-[0.3] contrast-125"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/60" />
         {/* Animated Dust/Particles */}
