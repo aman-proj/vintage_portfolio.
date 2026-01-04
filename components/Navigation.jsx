@@ -1,79 +1,53 @@
-// "use client";
-// import { motion } from "framer-motion";
+
+
+"use client";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Instagram, Code2, Mail, ArrowUpRight, Globe, ShieldCheck } from "lucide-react";
 
 // export function Navbar() {
+//   const scrollTo = (id) => {
+//     const element = document.getElementById(id);
+//     if (element) {
+//       element.scrollIntoView({ behavior: "smooth" });
+//     }
+//   };
+
+//   const navItems = [
+//     { label: "Archive", id: "archive" },
+//     { label: "Case Files", id: "case-files" },
+//     { label: "Practice", id: "practice" }
+//   ];
+
 //   return (
 //     <motion.nav 
 //       initial={{ y: -100 }}
 //       animate={{ y: 0 }}
 //       className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:px-12 md:py-8 flex justify-between items-center bg-transparent backdrop-blur-[2px]"
 //     >
-//       <div className="font-serif text-lg text-white tracking-widest uppercase">
-//         AK
+//       <div className="font-serif text-xl text-white tracking-[0.2em] uppercase cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+//         AK<span className="text-white/20 group-hover:text-white transition-colors duration-500">_ARCHIVE</span>
 //       </div>
       
-//       <div className="flex gap-8 md:gap-12">
-//         {["Archive", "Case Files", "Practice"].map((item) => (
+//       <div className="flex gap-6 md:gap-12">
+//         {navItems.map((item) => (
 //           <button 
-//             key={item}
-//             className="font-mono text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-white transition-colors"
+//             key={item.id}
+//             onClick={() => scrollTo(item.id)}
+//             className="font-mono text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-white transition-all duration-300 relative group"
 //           >
-//             {item}
+//             {item.label}
+//             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-500" />
 //           </button>
 //         ))}
 //       </div>
 
-//       <div className="hidden md:block font-mono text-[10px] tracking-[0.2em] uppercase text-white/20">
-//         LAT: 28.6139° N / LONG: 77.2090° E
+//       <div className="hidden lg:flex items-center gap-4 font-mono text-[9px] tracking-[0.2em] uppercase text-white/20">
+//         <div className="w-2 h-2 rounded-full bg-green-500/40 animate-pulse" />
+//         SYSTEM_ACTIVE // {new Date().getFullYear()}
 //       </div>
 //     </motion.nav>
 //   );
 // }
-
-// export function Footer() {
-//   return (
-//     <footer className="py-24 px-6 md:px-12 bg-[#0a0a0a] border-t border-white/5">
-//       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
-//         <div className="space-y-6">
-//           <div className="font-serif text-4xl text-white tracking-widest uppercase">
-//             Aman Kumar
-//           </div>
-//           <p className="font-mono text-[10px] text-white/30 tracking-widest uppercase max-w-xs leading-relaxed">
-//             Engineering systems with archival intent. Designed for the long term.
-//           </p>
-//         </div>
-
-//         <div className="space-y-4">
-//           <div className="font-mono text-[10px] text-white/20 tracking-widest uppercase">
-//             Contact / Transmission
-//           </div>
-//           <div className="flex flex-col gap-2">
-//             {["Email", "GitHub", "LinkedIn", "X"].map((link) => (
-//               <a 
-//                 key={link}
-//                 href="#"
-//                 className="font-sans text-sm text-white/60 hover:text-white transition-colors flex items-center gap-4 group"
-//               >
-//                 {link}
-//                 <span className="w-4 h-[1px] bg-white/10 group-hover:w-8 transition-all" />
-//               </a>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-      
-//       <div className="max-w-6xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4 font-mono text-[9px] text-white/10 tracking-[0.4em] uppercase">
-//         <div>© 2024-2025 Aman Kumar / Personal Archive</div>
-//         <div>All Systems Operational</div>
-//       </div>
-//     </footer>
-//   );
-// }
-
-"use client";
-import { motion } from "framer-motion";
-import { Github, Linkedin, Instagram, Code2, Mail, ArrowUpRight, Globe, ShieldCheck } from "lucide-react";
-
 export function Navbar() {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
@@ -92,18 +66,18 @@ export function Navbar() {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:px-12 md:py-8 flex justify-between items-center bg-transparent backdrop-blur-[2px]"
+      className="fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-12 md:py-8 flex justify-between items-center bg-transparent backdrop-blur-[2px]"
     >
-      <div className="font-serif text-xl text-white tracking-[0.2em] uppercase cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+      <div className="font-serif text-base md:text-xl text-white tracking-[0.15em] md:tracking-[0.2em] uppercase cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
         AK<span className="text-white/20 group-hover:text-white transition-colors duration-500">_ARCHIVE</span>
       </div>
       
-      <div className="flex gap-6 md:gap-12">
+      <div className="flex gap-3 md:gap-12">
         {navItems.map((item) => (
           <button 
             key={item.id}
             onClick={() => scrollTo(item.id)}
-            className="font-mono text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-white transition-all duration-300 relative group"
+            className="font-mono text-[8px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/40 hover:text-white transition-all duration-300 relative group"
           >
             {item.label}
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white group-hover:w-full transition-all duration-500" />
@@ -135,7 +109,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-px bg-white/20" />
-                  <span className="font-mono text-[10px] text-white/40 tracking-[0.5em] uppercase italic">EST. 2021 // VOL_IV</span>
+                  <span className="font-mono text-[10px] text-white/40 tracking-[0.5em] uppercase italic">EST. 2004 // VOL_IV</span>
                 </div>
               </div>
               
@@ -155,7 +129,7 @@ export function Footer() {
                       { icon: <Github size={28} />, url: "https://github.com/aman-proj", label: "GitHub" },
                       { icon: <Linkedin size={28} />, url: "https://www.linkedin.com/in/aman-kumar-630796274/", label: "LinkedIn" },
                       { icon: <Instagram size={28} />, url: "https://www.instagram.com/amankumar1121?igsh=MXZmNW9tZTZsbGtxbg==", label: "Instagram" },
-                      { icon: <Code2 size={28} />, url: "#", label: "Codolio" },
+                      // { icon: <Code2 size={28} />, url: "#", label: "Codolio" },
                       { icon: <Mail size={28} />, url: "mailto:aman943186@gmail.com", label: "Email" }
                     ].map((social) => (
                     <a 
@@ -220,7 +194,7 @@ export function Footer() {
             <div className="space-y-8">
               <div className="space-y-2">
                 <div className="font-mono text-[10px] text-white/60 uppercase tracking-widest flex items-center gap-2">
-                  <Globe size={12} /> Origin: Delhi, IN
+                  <Globe size={12} /> Origin: Patna, IN
                 </div>
                 <div className="font-mono text-[10px] text-white/30 uppercase tracking-widest pl-5">
                   Node: Terminal_IIIT_K
