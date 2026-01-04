@@ -152,11 +152,11 @@ export function Footer() {
 
                   <div className="flex flex-wrap gap-8">
                     {[
-                      { icon: <Github size={28} />, url: "https://github.com/aman-kumar", label: "GitHub" },
-                      { icon: <Linkedin size={28} />, url: "#", label: "LinkedIn" },
-                      { icon: <Instagram size={28} />, url: "#", label: "Instagram" },
+                      { icon: <Github size={28} />, url: "https://github.com/aman-proj", label: "GitHub" },
+                      { icon: <Linkedin size={28} />, url: "https://www.linkedin.com/in/aman-kumar-630796274/", label: "LinkedIn" },
+                      { icon: <Instagram size={28} />, url: "https://www.instagram.com/amankumar1121?igsh=MXZmNW9tZTZsbGtxbg==", label: "Instagram" },
                       { icon: <Code2 size={28} />, url: "#", label: "Codolio" },
-                      { icon: <Mail size={28} />, url: "mailto:contact@aman.dev", label: "Email" }
+                      { icon: <Mail size={28} />, url: "mailto:aman943186@gmail.com", label: "Email" }
                     ].map((social) => (
                     <a 
                       key={social.label}

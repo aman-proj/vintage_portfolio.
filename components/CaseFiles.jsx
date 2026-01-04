@@ -11,8 +11,8 @@ const PROJECTS = [
     tech: ["Next.js", "FastAPI", "Pinecone", "LangChain"],
     image: "/skillamigo.png",
     type:"img",
-    link: "https://github.com/aman-kumar",
-    github: "https://github.com/aman-kumar/skillamigo",
+    link: "https://github.com/aman-proj/SkillAmigo",
+    github: "https://github.com/aman-proj/SkillAmigo",
     demo: "https://youtu.be/VWP0shIGQPQ?si=QWg1rPgx0KV2tqmD"
 
   },
@@ -20,32 +20,33 @@ const PROJECTS = [
     id: "FF-02",
     type: "PROJECT",
     title: "FinFriend",
-    description: "Production-ready financial content platform with SEO optimization and Lexical-based rich-text editing.",
+    description: "FinFriend is a production-ready, SEO-optimized financial content platform that combines automated news aggregation with a moderated writer ecosystem, secure publishing workflows, real-time reader–writer messaging, and an admin-controlled CMS delivering fast, discoverable, and interactive financial insights at scale.",
     tech: ["React", "Next.js", "WebSockets", "Lexical"],
     image: "/finfriend.mp4",
     type:"vid",
-    link: "https://github.com/aman-kumar",
-    github: "https://github.com/aman-kumar/finfriend"
+    link: "https://github.com/aman-proj/finfriend",
+    github: "https://github.com/aman-proj/finfriend",
+    demo:"https://www.finfriend-dt.com/"
   },
   {
     id: "UF-03",
     type: "PROJECT",
     title: "Farmmitra",
-    description: "UI/UX bridging project delivering 12+ responsive screens with usability testing and flow optimization.",
-    tech: ["React", "Tailwind", "Figma"],
+    description: "FarmMitra is an AI-powered marketplace connecting farmers with eco-conscious companies to convert agricultural waste into value. An integrated AI chatbot, learning hub, and community forum support listings, pricing guidance, and sustainable practices, while AI-driven insights estimate fair value, recommend reuse pathways, and track carbon savings for ESG impact.",
+    tech: ["React", "Tailwind", "Figma","MERN"],
     image: "/farmmitra.mp4",
-    link: "https://github.com/aman-kumar",
-    github: "https://github.com/aman-kumar/unifindss"
+    link: "https://github.com/aman-proj/mitra-farm",
+    github: "https://github.com/aman-proj/mitra-farm"
   },
   {
     id: "UF-03",
     type: "PROJECT",
     title: "Aquasense",
-    description: "UI/UX bridging project delivering 12+ responsive screens with usability testing and flow optimization.",
-    tech: ["React", "Tailwind", "Figma"],
+    description: "AquaSense is an AI + IoT–driven water management platform that monitors water quality in real time, applies ML for intelligent reuse decisions, enables smart routing, and supports operations through AI agents, analytics dashboards, and a built-in community learning system.",
+    tech: ["React", "Tailwind", "Python","Next.js"],
     image: "/aquasense.png",
-    link: "https://github.com/aman-kumar",
-    github: "https://github.com/aman-kumar/unifindss"
+    link: "https://github.com/aman-proj/aqua_sense/",
+    github: "https://github.com/aman-proj/aqua_sense/"
   },
   {
     id: "RV-04",
@@ -312,7 +313,7 @@ export function CaseFiles() {
                  transition"
     >
       <span className="w-8 h-px bg-white/20" />
-      -Recorded Demonstration
+      -Recorded Demonstration/Live link
     </a>
   )}
   </div>
