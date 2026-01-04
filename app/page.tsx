@@ -39,13 +39,16 @@ export default function Home() {
           transition={{ duration: 1 }}
           viewport={{ margin: "-100px" }}
         >
+          <div id="archive">
           <ArchiveNote />
+          </div>
         </motion.div>
-
+<div id="case-files">
         <CaseFiles />
-        
+        </div>
+        <div id="practice">
         <Timeline />
-        
+        </div>
         <Tools />
         
         <Achievements />
